@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13547314809430" configfile="/edu.espritCs.rakzaWeb/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="addClaim.xhtml" x="300" y="72" id="pf13547315518115" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf13547320118618" inlinks="pf13551650726955" path="/addClaim.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="listOfClaims.xhtml" x="192" y="197" id="pf13547315518116" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf135473550460411" inlinks="pf13547320118618" path="/listOfClaims.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="updateClaim.xhtml" x="120" y="72" id="pf135473321046410" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf135473550460411" path="/updateClaim.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="loginPage.xhtml" x="543" y="178" id="pf13551646347280" outlinks="pf13551646347281 pf13551646347282" path="/loginPage.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="menu.xhtml" x="395" y="197" id="pf13551646347283" outlinks="pf13551650726955" inlinks="pf13551646347282" path="/menu.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="error.xhtml" x="452" y="92" id="pf13551646347284" inlinks="pf13551646347281" path="/error.xhtml"/>
+  <links id="pf13547320118618" target="pf13547315518116" source="pf13547315518115" outcome="list"/>
+  <links id="pf135473550460411" target="pf135473321046410" source="pf13547315518116" outcome="update"/>
+  <links id="pf13551646347281" target="pf13551646347284" source="pf13551646347280" outcome="KO"/>
+  <links id="pf13551646347282" target="pf13551646347283" source="pf13551646347280" outcome="OK"/>
+  <links id="pf13551650726955" target="pf13547315518115" source="pf13551646347283" outcome="add"/>
+</pageflow:Pageflow>

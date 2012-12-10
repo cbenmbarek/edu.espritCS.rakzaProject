@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd"
+    version="2.1">
+	<navigation-rule>
+		<display-name>addClaim.xhtml</display-name>
+		<from-view-id>/addClaim.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>list</from-outcome>
+			<to-view-id>/listOfClaims.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>listOfClaims.xhtml</display-name>
+		<from-view-id>/listOfClaims.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>update</from-outcome>
+			<to-view-id>/updateClaim.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>loginPage.xhtml</display-name>
+		<from-view-id>/loginPage.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>KO</from-outcome>
+			<to-view-id>/error.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>loginPage.xhtml</display-name>
+		<from-view-id>/loginPage.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>OK</from-outcome>
+			<to-view-id>/menu.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>menu.xhtml</display-name>
+		<from-view-id>/menu.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>add</from-outcome>
+			<to-view-id>/addClaim.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+</faces-config>
